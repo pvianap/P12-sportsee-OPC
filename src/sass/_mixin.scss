@@ -1,0 +1,26 @@
+@use './variables' as *;
+@mixin flex($align-item, $justify-content) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+@mixin margin-side-desktop($margin: $large-margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin margin-side-tablet($margin: $medium-margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin margin-side-mobile($margin: $small-margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin maxWidth {
+  width: -webkit-fill-available;
+  max-width: $desktop-width;
+}
