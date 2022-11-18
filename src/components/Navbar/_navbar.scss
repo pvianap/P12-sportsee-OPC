@@ -1,0 +1,39 @@
+@use '../../sass/' as *;
+
+.navbar {
+  border: solid brown;
+  width: -webkit-fill-available;
+  margin-bottom: $small-margin;
+  max-width: 100%;
+  background-color: $bar-bg;
+  color: $main-color;
+  @include flex(center, space-between);
+
+  @include mobile {
+    @include margin-side-mobile;
+    &__logo {
+      img {
+        height: 47px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &__logo {
+    font-size: 64px;
+    height: 56x;
+  }
+  &__list {
+    list-style: none;
+    @include flex(center, space-between);
+    li {
+      margin: 10px;
+    }
+  }
+}
