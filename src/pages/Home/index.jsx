@@ -1,9 +1,13 @@
 import { Fragment } from 'react';
+import { fetchUser } from '../../api';
+
+import Navbar from '../../components/Navbar';
 
 export default function Home() {
+  fetchUser(12);
   return (
     <Fragment>
-      <h1>SportSee</h1>
+      <Navbar />
     </Fragment>
   );
 }

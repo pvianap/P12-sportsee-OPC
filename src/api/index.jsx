@@ -1,8 +1,12 @@
 import axios from 'axios';
 
-const url = 'http://localhost:3000/users';
+const url = 'http://localhost:3000/user/';
 
-export const fetchPosts = () => axios.get(url);
+export const fetchUser = (userId) =>
+  axios
+    .get(url + userId)
+    .then((res) => console.log(res.data))
+    .catch((error) => console.log(error));
 
 // http://localhost:3000/user/${userId} - retrieves information from a user. This first endpoint includes the user id, user information (first name, last name and age), the current day's score (todayScore) and key data (calorie, macronutrient, etc.).
 // http://localhost:3000/user/${userId}/activity - retrieves a user's activity day by day with kilograms and calories.

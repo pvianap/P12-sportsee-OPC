@@ -1,0 +1,40 @@
+@use './sass/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $desktop-text-size;
+  min-width: 375px;
+
+  @include tablet {
+    // A TESTER !!!!!!!!!!
+    font-size: 80%;
+  }
+  @include mobile {
+    font-size: $mobile-text-size;
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  background-color: $body-bg;
+  color: $main-color;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 210px;
+}
