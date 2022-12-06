@@ -1,9 +1,11 @@
 # P12 - SportSee
 
 Projet 12 - Développez un tableau de bord d'analytics avec React
-## Available Scripts
 
-In the project directory, you can run:
+
+## Author
+
+Pedro Viana P.
 
 ### `npm start`
 
