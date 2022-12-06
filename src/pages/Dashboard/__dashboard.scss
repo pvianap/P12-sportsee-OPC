@@ -40,7 +40,10 @@
     flex-wrap: wrap;
   }
   &__nutrituionContainer {
+    @include flex(flex-start, space-between);
+    flex-direction: column;
     border: solid red;
     width: 20%;
+    height: 100%;
   }
 }

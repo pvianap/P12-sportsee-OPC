@@ -5,6 +5,7 @@ import {
   XAxis,
   YAxis,
   Tooltip,
+  Rectangle,
   ResponsiveContainer,
 } from 'recharts';
 import PropTypes from 'prop-types';
@@ -17,12 +18,13 @@ export default function AvgSession({ data }) {
     letter: days[i],
   }));
 
-  //Custon tooltip
+  //Custom tooltip
+
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="custom-tooltip">
-          <p className="label">{payload[0].value}</p>
+        <div className="tooltip">
+          <p className="label">{payload[0].value} min</p>
         </div>
       );
     }
@@ -30,12 +32,24 @@ export default function AvgSession({ data }) {
     return null;
   };
 
+  //Custom cursor
+  function CustomizedCursor({ points }) {
+    return (
+      <Rectangle
+        fill="black"
+        opacity={0.1}
+        x={points[1].x}
+        width={500}
+        height={300}
+      />
+    );
+  }
   return (
     <div className="chart__session">
-      <ResponsiveContainer width={258} height={263} className="chart">
+      <ResponsiveContainer width={258} height={263} className="chartAvg">
         <LineChart
           data={sessions}
-          margin={{ top: 80, right: 0, left: 0, bottom: 5 }}
+          margin={{ top: 40, right: 0, left: 0, bottom: 5 }}
         >
           <defs>
             <linearGradient id="gradientLine" x="0" x2="0.8" y2="0">
@@ -44,21 +58,19 @@ export default function AvgSession({ data }) {
             </linearGradient>
           </defs>
           <Line
-            type="basis"
+            type="natural"
             dataKey="sessionLength"
             stroke="url(#gradientLine)"
             strokeOpacity={1}
             strokeWidth={2}
-            dot={
-              CustomTooltip.active
-                ? {
-                    strokeWidth: 2,
-                  }
-                : { stroke: 'blue', strokeWidth: 0, r: 0, strokeDasharray: '' }
-            }
+            dot={false}
+            activeDot={{
+              stroke: 'rgba(255, 255, 255, 0.5)',
+              strokeWidth: 10,
+              r: 5,
+            }}
           />
           <YAxis hide={true} domain={['dataMin -15', 'dataMax + 45']} />
-
           <text
             className="title__lineChart"
             width="15"
@@ -80,7 +92,8 @@ export default function AvgSession({ data }) {
             opacity={0.6}
             interval="preserveStartEnd"
           />
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip cursor={<CustomizedCursor />} content={<CustomTooltip />} />
+          onMouseMove={(e) => {}}
         </LineChart>
       </ResponsiveContainer>
     </div>

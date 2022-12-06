@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
-// import DailyActivity from '../../components/DailyActivity';
+import DailyActivity from '../../components/DailyActivity';
 import AvgSession from '../../components/Avgsession';
 import RadarChart from '../../components/RadarChart';
 import GoalsChart from '../../components/GoalsChart';
+import NutritionIcon from '../../components/NutritionIcon';
 import './__dashboard.scss';
 
 export default function Dashboard({ data }) {
+  console.log(data);
   return (
     <Fragment>
       <div className="dashboard">
@@ -21,12 +23,17 @@ export default function Dashboard({ data }) {
           </p>
         </div>
         <div className="dashboard__chartContainer">
-          {/* <DailyActivity data={data.activity} /> */}
+          <DailyActivity data={data.activity} />
           <AvgSession data={data.averageSessions} />
           <RadarChart data={data.performance} />
           <GoalsChart data={data.user.todayScore} />
         </div>
-        <div className="dashboard__nutrituionContainer">Nutris</div>
+        <div className="dashboard__nutrituionContainer">
+          <NutritionIcon type="calories" data={data.user.keyData} />
+          <NutritionIcon type="proteines" data={data.user.keyData} />
+          <NutritionIcon type="glucides" data={data.user.keyData} />
+          <NutritionIcon type="lipides" data={data.user.keyData} />
+        </div>
       </div>
     </Fragment>
   );

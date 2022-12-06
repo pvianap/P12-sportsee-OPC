@@ -11,15 +11,24 @@ import {
 import PropTypes from 'prop-types';
 
 export default function RadarCharts({ data }) {
+  const frenchLabel = {
+    intensity: 'Intensité',
+    cardio: 'Cadio',
+    endurance: 'Endurance',
+    strength: 'Force',
+    energy: 'Energie',
+    speed: 'Vitesse',
+  };
+
   const performances = data.data.map((e) => ({
-    subject: data.kind[e.kind],
+    subject: frenchLabel[data.kind[e.kind]],
     value: e.value,
   }));
 
   return (
     <div className="chart__radar">
       <ResponsiveContainer width={258} height={263}>
-        <RadarChart data={performances} outerRadius={90}>
+        <RadarChart data={performances.reverse()} outerRadius={90}>
           <PolarGrid radialLines={false} />
           <PolarAngleAxis
             dataKey="subject"

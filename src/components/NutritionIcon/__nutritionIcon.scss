@@ -1,0 +1,25 @@
+@use '../../sass/' as *;
+
+.nutritionIcon {
+  background-color: #fbfbfb;
+  width: 258px;
+  height: 124px;
+  border-radius: 5px;
+  padding: 32px;
+  @include flex(center, space-around);
+  &__text {
+    @include flex(flex-start, space-around);
+    flex-direction: column;
+    &--value {
+      font-size: 20px;
+    }
+    &--type {
+      font-size: 14px;
+      color: #74798c;
+    }
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}

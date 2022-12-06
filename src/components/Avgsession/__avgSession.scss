@@ -1,5 +1,14 @@
 @use '../../sass/' as *;
 
-.chart {
+.chartAvg {
   background-color: red;
+  .tooltip {
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    height: 25px;
+    width: 39px;
+    flex-direction: column;
+    @include flex(center, space-evenly);
+  }
 }
