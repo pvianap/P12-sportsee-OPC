@@ -1,6 +1,5 @@
 import './__radarChart.scss';
 import React from 'react';
-
 import {
   PolarGrid,
   PolarAngleAxis,
@@ -10,6 +9,11 @@ import {
 } from 'recharts';
 import PropTypes from 'prop-types';
 
+/**
+ * Performance Chart
+ * @param {object} data of performance of user
+ * @component create a radar chart with 6 elements of performance (Intensity, Cardio, Energie, Endurence, Force, Speed)
+ */
 export default function RadarCharts({ data }) {
   const frenchLabel = {
     intensity: 'Intensité',

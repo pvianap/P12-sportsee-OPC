@@ -6,6 +6,12 @@ import GoalsChart from '../../components/GoalsChart';
 import NutritionIcon from '../../components/NutritionIcon';
 import './__dashboard.scss';
 
+/**
+ *
+ * @param {object} data object group user infos as { user, activity, averageSessions, performance }
+ * @component dashboard page of application with sport activities of user
+ */
+
 export default function Dashboard({ data }) {
   console.log(data);
   return (

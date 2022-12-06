@@ -6,6 +6,13 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import PropTypes from 'prop-types';
+
+/**
+ * Goals Chart Component
+ * @param {object} data of sessions
+ * @component create a radial bar chart with % of goals reached
+ */
+
 export default function GoalsChart({ data }) {
   const dataChart = [
     {

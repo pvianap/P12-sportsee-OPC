@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+/**
+ * @param {number} user Id
+ * @return {object} this object group user infos as { user, activity, averageSessions, performance }
+ */
+
 export async function getUserData(userId) {
   const url = 'http://localhost:3000/user/';
   try {

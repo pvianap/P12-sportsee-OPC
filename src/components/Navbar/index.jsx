@@ -2,6 +2,11 @@ import React, { Fragment } from 'react';
 import Logo from '../../assets/logo.png';
 import './_navbar.scss';
 
+/**
+ * Navbar of app
+ * @component top navbar with links for Homepage, Profile page, Réglage, Comunity.
+ */
+
 export default function Navbar() {
   return (
     <Fragment>

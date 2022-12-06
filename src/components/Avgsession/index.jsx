@@ -10,6 +10,11 @@ import {
 } from 'recharts';
 import PropTypes from 'prop-types';
 
+/**
+ * Average Session Duration
+ * @param {object} data of sessions
+ * @component line chart component with average duration of sessions
+ */
 export default function AvgSession({ data }) {
   // Adaptation of data
   const days = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];

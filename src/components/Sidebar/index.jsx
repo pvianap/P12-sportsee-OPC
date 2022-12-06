@@ -1,6 +1,11 @@
 import './_sidebar.scss';
 import SideIcon from '../SideIcon';
 
+/**
+ * Sidebar of app
+ * @component lateral bar with links for diferent activities
+ */
+
 export default function Sidebar() {
   return (
     <div className="sidebar">
