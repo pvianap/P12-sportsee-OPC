@@ -7,14 +7,16 @@ import {
 } from 'recharts';
 import PropTypes from 'prop-types';
 export default function GoalsChart({ data }) {
+  console.log('Data arrived: ', data);
+
   const dataChart = [
     {
-      name: '18-24',
-      uv: 31.47,
-      pv: 12,
+      name: 'de votre objectif',
+      score: data,
       fill: '#8884d8',
     },
   ];
+
   const style = {
     top: '50%',
     right: 0,
@@ -27,7 +29,7 @@ export default function GoalsChart({ data }) {
       <RadialBarChart
         cx="50%"
         cy="50%"
-        innerRadius="10%"
+        innerRadius="80%"
         outerRadius="80%"
         barSize={10}
         data={dataChart}
@@ -37,7 +39,7 @@ export default function GoalsChart({ data }) {
           label={{ position: 'insideStart', fill: '#fff' }}
           background
           clockWise
-          dataKey="uv"
+          dataKey="score"
         />
         <Legend
           iconSize={10}
