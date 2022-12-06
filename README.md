@@ -9,11 +9,7 @@ Pedro Viana P.
 
 ### Technologies
 
-Made-with-Javascript
-Sassv_1.49.9
-React-v_17.0.2
-React-Router-v_6.2.2
-Recharts-v_2.1.9
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
