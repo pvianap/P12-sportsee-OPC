@@ -4,6 +4,13 @@ import ProteinIcon from '../../assets/protein_icon.png';
 import CarbsIcon from '../../assets/carbs_icon.png';
 import FatIcon from '../../assets/fat_icon.png';
 
+/**
+ * Nutrition icons
+ * @param {string} type @example calories, proteines, glucides, lipides
+ * @param {object} data values depending of type of nutrition element
+ * @component create the nutrition icons with an img and the values
+ */
+
 export default function NutritionIcon({ type, data }) {
   console.log(type, data);
   const typeText = type.charAt(0).toUpperCase() + type.slice(1);
@@ -42,3 +49,5 @@ export default function NutritionIcon({ type, data }) {
     </div>
   );
 }
+
+Nutr;

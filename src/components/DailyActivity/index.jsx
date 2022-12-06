@@ -10,6 +10,11 @@ import {
 } from 'recharts';
 import PropTypes from 'prop-types';
 
+/**
+ * Activity Chart
+ * @param {object} data of sessions
+ * @component bar chart with weight and carbs of user
+ */
 export default function DailyActivity({ data }) {
   const dataChart = data.sessions.map((e, i) => ({
     day: i + 1,
