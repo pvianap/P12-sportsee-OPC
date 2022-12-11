@@ -13,12 +13,12 @@ export default function Router() {
   console.log('Router was called');
   return (
     <Routes>
-      {/* Route adaptation for github pages */}
-      {/* <Route
+      Route adaptation for github pages
+      <Route
         exact
         path="/P12-sportsee-OPC/"
         element={<Navigate replace to="/dashboard/12" />}
-      /> */}
+      />
       <Route exact path="/" element={<Navigate replace to="/dashboard/12" />} />
       {/* <Route path="/home" element={<Dashboard />} /> */}
       {/* <Route path="/profile" element={<Profile />} />
