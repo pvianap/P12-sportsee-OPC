@@ -7,7 +7,7 @@ import mockedData from './mock';
  */
 
 export async function getUserData(userId) {
-  const url = 'http://localhost:3000/user/';
+  const url = 'https://p12-sportsee-opc-backend.onrender.com/user/';
   try {
     const user = await axios.get(url + userId).then((res) => res.data.data);
     const activity = await axios
