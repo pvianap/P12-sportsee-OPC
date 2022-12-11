@@ -1,0 +1,41 @@
+@use '../../sass/' as *;
+.error {
+  @include flex(center, center);
+  @include maxWidth;
+  @include margin-side-desktop;
+  flex-direction: column;
+  padding: 50px;
+  max-width: $desktop-width;
+  border-radius: $border-radius;
+  height: 100%;
+  @include margin-side-desktop;
+  @include tablet {
+    @include margin-side-tablet;
+  }
+  @include mobile {
+    @include margin-side-mobile;
+  }
+  &__title {
+    font-size: 288px;
+    font-weight: 700;
+    @include tablet {
+      font-size: 200px;
+    }
+    @include mobile {
+      font-size: 96px;
+    }
+  }
+  &__msg {
+    font-size: 36px;
+    text-align: center;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+}

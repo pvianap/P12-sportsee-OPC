@@ -12,7 +12,6 @@ import FatIcon from '../../assets/fat_icon.png';
  */
 
 export default function NutritionIcon({ type, data }) {
-  console.log(type, data);
   const typeText = type.charAt(0).toUpperCase() + type.slice(1);
   const nutriValue = {
     calories: data.calorieCount,
@@ -49,5 +48,3 @@ export default function NutritionIcon({ type, data }) {
     </div>
   );
 }
-
-Nutr;
