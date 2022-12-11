@@ -2,7 +2,7 @@
 
 .sidebar {
   z-index: -10;
-  border: salmon solid;
+
   background-color: $bar-bg;
   width: 117px;
   @include flex(center, space-evenly);
