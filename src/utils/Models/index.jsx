@@ -1,5 +1,6 @@
 /**
- * This is the class for put data in right format for each chart.
+ * This is the class for put data in right format for each chart
+ * .
  * @class You can use methods as {FormatSessions, FormatDaily, FormatGoals, FormatRadar}
  */
 
