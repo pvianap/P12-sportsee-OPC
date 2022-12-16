@@ -1,9 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import Loading from './pages/Loading';
-import Dashboard from './pages/Dashboard';
+import React, { Fragment } from 'react';
+
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import { getUserData } from './utils/api';
+
 import { useParams, BrowserRouter } from 'react-router-dom';
 import Router from './utils/Router';
 import './App.scss';

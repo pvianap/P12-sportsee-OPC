@@ -1,4 +1,5 @@
 import './__dailyactivity.scss';
+import Models from '../../utils/Models';
 import {
   ResponsiveContainer,
   BarChart,
@@ -16,12 +17,8 @@ import PropTypes from 'prop-types';
  * @component bar chart with weight and carbs of user
  */
 export default function DailyActivity({ data }) {
-  const dataChart = data.sessions.map((e, i) => ({
-    day: i + 1,
-    date: e.day,
-    weight: e.kilogram,
-    cal: e.calories,
-  }));
+  const model = new Models();
+  const dataChart = model.FormatDaily(data);
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (

@@ -9,6 +9,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import PropTypes from 'prop-types';
+import Models from '../../utils/Models';
 
 /**
  * Average Session Duration
@@ -16,15 +17,10 @@ import PropTypes from 'prop-types';
  * @component line chart component with average duration of sessions
  */
 export default function AvgSession({ data }) {
-  // Adaptation of data
-  const days = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
-  const sessions = data.sessions.map((s, i) => ({
-    ...s,
-    letter: days[i],
-  }));
+  const model = new Models();
+  const sessions = model.FormatSessions(data);
 
   //Custom tooltip
-
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (

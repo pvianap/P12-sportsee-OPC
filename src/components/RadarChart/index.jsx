@@ -1,5 +1,6 @@
 import './__radarChart.scss';
 import React from 'react';
+import Models from '../../utils/Models';
 import {
   PolarGrid,
   PolarAngleAxis,
@@ -15,20 +16,8 @@ import PropTypes from 'prop-types';
  * @component create a radar chart with 6 elements of performance (Intensity, Cardio, Energie, Endurence, Force, Speed)
  */
 export default function RadarCharts({ data }) {
-  const frenchLabel = {
-    intensity: 'Intensité',
-    cardio: 'Cadio',
-    endurance: 'Endurance',
-    strength: 'Force',
-    energy: 'Energie',
-    speed: 'Vitesse',
-  };
-
-  const performances = data.data.map((e) => ({
-    subject: frenchLabel[data.kind[e.kind]],
-    value: e.value,
-  }));
-
+  const model = new Models();
+  const performances = model.FormatRadar(data);
   return (
     <div className="chart__radar">
       <ResponsiveContainer width={258} height={263}>

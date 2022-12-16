@@ -1,4 +1,5 @@
 import './__goalsChart.scss';
+import Models from '../../utils/Models';
 import {
   RadialBarChart,
   RadialBar,
@@ -14,19 +15,8 @@ import PropTypes from 'prop-types';
  */
 
 export default function GoalsChart({ data }) {
-  const dataChart = [
-    {
-      name: '',
-      score: 100,
-      fill: '#8884d8',
-      opacity: '0%',
-    },
-    {
-      name: 'de votre objectif',
-      score: data * 100,
-    },
-  ];
-
+  const model = new Models();
+  const dataChart = model.FormatGoals(data);
   return (
     <ResponsiveContainer width={258} height={263} className="radialChart">
       <RadialBarChart

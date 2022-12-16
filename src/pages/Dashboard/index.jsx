@@ -19,9 +19,7 @@ import './__dashboard.scss';
 export default function Dashboard() {
   const [userData, setUserData] = useState(null);
   const { id } = useParams();
-  console.log('Id: ', id);
   useEffect(() => {
-    console.log('Id useEffect: ', id);
     getUserData(id)
       .then((res) => setUserData(res))
       .catch((err) => console.log(err));
