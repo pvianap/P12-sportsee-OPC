@@ -10,7 +10,6 @@ import Dashboard from '../../pages/Dashboard';
  */
 
 export default function Router() {
-  console.log('Router was called');
   return (
     <Routes>
       Route adaptation for github pages
