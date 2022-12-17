@@ -22,11 +22,6 @@ Projet 12 - Développez un tableau de bord d'analytics avec React
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/pvianap/P12-sportsee-OPC/sass?color=pink&label=Sass)
 
 
-## Environments
-
-Lien vers la page mocké
-
-
 ## Resources provided
 
 UI Mockup:
@@ -37,6 +32,12 @@ UI Mockup:
 Kaban of project:
 
 [![image](https://user-images.githubusercontent.com/91153511/208234480-5df8567c-2a10-4b24-8287-9452ce2dc656.png)](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
+
+
+## REQUIREMENTS
+
+- NodeJS (version 16)
+- Npm
 
 
 ## Installation and Launch
