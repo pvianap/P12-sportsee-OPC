@@ -30,7 +30,8 @@ Lien vers la page mocké
 ## Resources provided
 
 UI Mockup:
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
+
+[![image](https://user-images.githubusercontent.com/91153511/208234328-02e54620-ce47-471d-906b-c59a1fa1d328.png)](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
 
 
 Img kanban avec un lien vers la page kaban du projet
