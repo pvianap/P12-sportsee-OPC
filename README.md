@@ -29,8 +29,8 @@ Lien vers la page mocké
 
 ## Resources provided
 
-Img de la maquette avec un lien vers la page Figma
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+UI Mockup:
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
 
 
 Img kanban avec un lien vers la page kaban du projet
