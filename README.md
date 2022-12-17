@@ -36,8 +36,8 @@ UI Mockup:
 
 Kaban of project:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 [![image](https://user-images.githubusercontent.com/91153511/208234480-5df8567c-2a10-4b24-8287-9452ce2dc656.png)](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
+
 
 ## Installation and Launch
 
