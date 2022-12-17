@@ -6,7 +6,7 @@ Projet 12 - Développez un tableau de bord d'analytics avec React
 
 ## Authors
 
-- [@pvianap](https://www.github.com/octokatherine)
+- [@pvianap](https://www.github.com/pvianap)
 
 
 ## Technologies
@@ -31,7 +31,7 @@ Lien vers la page mocké
 
 UI Mockup:
 
-[![image](![image](https://user-images.githubusercontent.com/91153511/208234418-66d01e05-3840-4039-b961-83b2e81a3e66.png))](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
+[![image](![image](https://user-images.githubusercontent.com/91153511/208234418-66d01e05-3840-4039-b961-83b2e81a3e66.png)](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
 
 
 Img kanban avec un lien vers la page kaban du projet
