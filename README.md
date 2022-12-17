@@ -34,9 +34,10 @@ UI Mockup:
 [![image](![image](https://user-images.githubusercontent.com/91153511/208234418-66d01e05-3840-4039-b961-83b2e81a3e66.png)](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
 
 
-Img kanban avec un lien vers la page kaban du projet
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Kaban of project:
 
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+[![image](https://user-images.githubusercontent.com/91153511/208234480-5df8567c-2a10-4b24-8287-9452ce2dc656.png)](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
 
 ## Installation and Launch
 
