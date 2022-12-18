@@ -7,6 +7,12 @@ import { useParams, BrowserRouter } from 'react-router-dom';
 import Router from './utils/Router';
 import './App.scss';
 
+/**
+ * App function call router for manage the pages that will be render.
+ * @function App
+ *
+ *  */
+
 function App() {
   return (
     <Fragment>
