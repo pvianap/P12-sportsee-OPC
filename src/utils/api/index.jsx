@@ -22,6 +22,7 @@ export async function getUserData(userId) {
 
     return { user, activity, averageSessions, performance };
   } catch (error) {
+    console.log('Fetching data from backend is not working: ', error);
     return MockedData(userId);
   }
 }
@@ -42,10 +43,9 @@ function MockedData(id) {
     (userPerformance) => userPerformance.userId === userId
   ).shift();
   console.log(
-    'Mocked activate',
+    'Trying to use mocked data: ',
     mockedData.USER_MAIN_DATA.filter((e) => e.id === userId)
   );
-  console.log();
 
   return { user, activity, averageSessions, performance };
 }

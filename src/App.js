@@ -21,7 +21,6 @@ function App() {
       <BrowserRouter>
         <Router />
       </BrowserRouter>
-      {/* {userData.user ? <Dashboard data={userData} /> : <Loading />} */}
     </Fragment>
   );
 }
